@@ -1,0 +1,77 @@
+AUTHOR: Carl Bruiners
+CONTACT: carl@carlbruiners.co.uk
+VERSION: 0.1
+STATUS: In Development
+
+HISTORY
+=====================================================================================
+DATE	 | AUTHOR		| REVISION	| NOTES / CHANGES
+-------------------------------------------------------------------------------------
+04/03/12 | Carl Bruiners	| 0.1		| Initial commit
+=====================================================================================
+
+REQUIREMENTS
+============
+* PC running Mac OSX (Lion tested only), Windows (Windows 7 tested only) or Linux (TBT) with HTML5 / CSS3 and JavaScript supporting web browsers
+* Mobile devices (Smartphones and tablets) that support HTML5, CSS 3 and JavaScript
+
+BACKGROUND
+==========
+I am an Agile Expert for one of the worlds largest companies. I have worked as Development Manager, Scrum Master and Agile Guru for many different companies and on numerous projects. My love for Agile came from its lightweight, simple interface, but over the last 2-3 years additional complexity layers have been added which has made the Agile framework 'heavy'. The really simple Agile tool is taking it back to its simplest form, whilst still supporting multiple reporting, its aim is to re-simplify the process, taking ownership back from the business and empowering the teams with what they need to deliver. 
+
+DESCRIPTION
+===========
+The really simple Agile tool is a open source project to create a simple yet powerful Agile project / program / product management tool.
+
+FEATURES
+========
+This list will constantly grow;
+
+* Great visuals with oversize task cards
+* Task wall
+* Backlog management
+* Unique tools for helping teams quickly breakdown work
+* Reporting - Cumulative flow, Burn downs, Test health and User Story coverage
+* Multi-platform support including tablets*, smart phones* and PC's (Mac, Linux, Windows)
+
+* Note: devices must support recommended requirements
+
+OPTIONS
+=======
+TBC
+
+FAQ
+===
+* What Agile methodology do you use whilst developing The really simple Agile tool?
+- Kanban with a MMFS. I would love to use Scrum, but I do have a day job which means I won't always be able to work on this project :-(. Once the tool is in a suitable state I will use it publicly on my site (www.carlbruiners.co.uk) to show the user stories being worked on and the backlog.
+
+* Does The really simple Agile tool support other databases other than SQLite?
+- Yes. One of the User Storiesis to create a connector between SQLite and other databases (SQL Server, MySQL and Oracle). This though will rely on the need to have some kind of server side implementation, though I promise to keep this to the bare minimal.
+
+* What browsers is The really simple Agile tool supported on?
+- Any browser that supports HTML5, CSS3 and JavaScript. Note: The offline storage feature requires that your browser supports SQLite databases, due to varying HTML5 implementation standards on different browsers it is not yet possible for me to determine which browsers this feature will be supported on (though I will try to support the major browsers; IE, FF, Safari, Opera and Chrome).
+
+* What technology does The really simple Agile tool use?
+- HTML5, CSS3, JavaScript and SQL.
+
+* Completely server side free? Can't be?
+- One of the goals of The really simple Agile tool is that you don't have to rely on server side technology or databases. A RDBM's would only be required 
+
+* Why are you offering this for free?
+- Agile appealed to me because of its simplicity, a lot of the tools I use today are far from being simple. The really simple Agile tool is attempting to revert back to the beliefs that I still harbour, that Agile works best when kept simple.
+
+* So whats the catch?
+- There isn't a catch. All I have done is retain the rights to remove the tool for further distribution at a later date. Anyone who is using the tool at that point will not be required to agree to any new T&C's, but they maybe unable to receive further updates to the tool.
+
+* I don't like certain aspects, can I just use your task wall?
+Yes. One of the drivers behind The really simple Agile tool was to allow any of the parts to be used independently, this may not always be the case as soon as a new feature is released, but I will refactor code to allow this to happen.
+
+TROUBLESHOOTING
+===============
+TBA
+
+COPYRIGHT
+=========
+All parts of the application remains the property of Carl Bruiners and at anytime he may choose to remove public access to the project. The project is free for all use, including commercial use and will remain free for all to use unless noticed is served on www.carlbruiners.com stating that the application is no longer open source.
+
+Usage of The really simple Agile tool or any parts of the tool is acceptance of these terms.
