@@ -1,15 +1,13 @@
 $(document).ready(function() {
-
-	// Accordion Demo #3
+	// TOP NAVIGATION
 	$('#accordion3').accordionza({
-		autoPlay: true,
+		autoPlay: false,
 		autoRestartDelay: 0,
 		pauseOnHover: true,
 		slideDelay: 3000,
 		slideEasing: 'easeOutCirc',
 		slideSpeed: 400,
 		slideTrigger: 'mouseover',
-		startSlide: 4
+		startSlide: 1
 	});
-
 });

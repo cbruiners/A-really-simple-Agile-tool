@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>A really simple Agile tool</title>
+<link rel="stylesheet" type="text/css" href="css/html5wall.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.tipsy.js"></script>
+
+</head>
+<body style="margin:0;padding:0;">
+	<div id="containersub" style="width:600px;">
+	Story
+	<form>
+		Title <input type="text" value="" style="width:370px;"/>
+		<br/>
+		Story
+		<br/>
+<textarea rows="6" cols="50" required="true">
+As a 
+I want
+because
+</textarea>
+		<br/>
+		Acceptance criteria (BDD)  (Optional:- auto generate tasks? <input type="checkbox">)
+		<br/>
+<textarea rows="6" cols="50" required="true">
+Given
+when
+then
+</textarea>
+		<br/>
+		
+		<table>
+			<tr>
+				<td colspan="3">Size <input type="text" style="width:40px;"/> - {T-shirt size / numeric}</td>
+			</tr>
+			<tr>
+				<td>
+					Owned by 
+					<select>
+						<option>High</option>
+						<option>Medium</option>
+						<option>Low</option>
+					</select>
+				</td>
+				<td>
+					Pair Partner
+					<select>
+						<option>High</option>
+						<option>Medium</option>
+						<option>Low</option>
+					</select>
+				</td>
+				
+				<td>Reviewed by 
+				<select>
+			<option>High</option>
+			<option>Medium</option>
+			<option>Low</option>
+		</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+				Priority 
+		<select>
+			<option>High</option>
+			<option>Medium</option>
+			<option>Low</option>
+		</select>
+				</td>
+				<td>
+				State 
+		<select>
+			<option>Backlog</option>
+			<option>In Progress</option>
+			<option>Accepted</option>
+		</select>
+				</td>
+				<td>MMFS? <input type="checkbox"></td>
+			</tr>
+		</table>
+		Notes
+		<br/>
+		<textarea rows="4" cols="50" required="true"></textarea>
+		<p>
+		Tasks {Grid}	
+		</p>
+	</form>
+	</div>
+</body>
+</html>

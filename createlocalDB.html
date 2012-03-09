@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>A really simple Agile tool</title>
+	
+	<script>
+	function initDatabase() {
+		try {
+		    if (!window.openDatabase) {
+		        alert('Databases are not supported in this browser.');
+		    } else {
+		        var shortName = 'simpleagiletool';
+		        var version = '1.0';
+		        var displayName = 'A really simple Agile tool';
+		        var maxSize = 100000; //  bytes
+		        simpleagiledb = openDatabase(shortName, version, displayName, maxSize);
+				createTables();
+				selectAll();
+		    }
+		} catch(e) {
+		    if (e == 2) {
+		        // Version number mismatch.
+		        console.log("Invalid database version.");
+		    } else {
+		        console.log("Unknown error "+e+".");
+		    }
+		    return;
+		}
+	}
+	
+	function createTables(){
+		DEMODB.transaction(
+	        function (transaction) {
+	        	//transaction.executeSql('CREATE TABLE IF NOT EXISTS columns(id INTEGER NOT NULL PRIMARY KEY, projectId INTEGER, guicolumnID TEXT NOT NULL,columnTitle TEXT NOT NULL, columnWIP TEXT);', [], nullDataHandler, errorHandler);
+		        	transaction.executeSql('CREATE TABLE IF NOT EXISTS columns(id INTEGER NOT NULL PRIMARY KEY, projectId INTEGER, guicolumnID TEXT NOT NULL,columnTitle TEXT NOT NULL, columnWIP INTEGER);', nullDataHandler, errorHandler);
+	        }
+	    );
+		//prePopulate();
+	}
+	
+	function prePopulate(){
+		DEMODB.transaction(
+		    function (transaction) {
+			//Optional Starter Data when page is initialized
+			var data = ['1','none','#B3B4EF','Helvetica','Porsche 911 GT3'];
+			//transaction.executeSql("INSERT INTO columns(id, projectId, guicolumnID, columnTitle, columnWIP) VALUES (?, ?, ?, ?, ?)", [data[0], data[1], data[2], data[3], data[4]]);
+			transaction.executeSql("INSERT INTO columns(id, projectId, guicolumnID, columnTitle, columnWIP) VALUES (1, 1, col1, 'In Development', 3)");
+		    }
+		);
+	}
+	
+	</script>
+	
+</head>
+
+<body>
+	
+</body>
+</html>

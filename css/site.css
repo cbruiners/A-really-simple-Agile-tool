@@ -1,0 +1,96 @@
+/*body {font-family:arial;}*/
+body { font:13px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif; }
+h1 {padding:0px;margin:0px;}
+h2 {padding:0px;margin-top:4px;}
+#board {min-height:100px;/*position:relative;*/}
+.title {background-color:#ff9900;text-align:center;color:white;padding: 2px 0px;border-bottom: 5px solid #fff;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;height:25px;padding-top:10px;vertical-align:middle;}
+
+/* TEMP COLUMNS */
+.col {background-color:#ddd;/*position:absolute;*/float:left;width: 650px;min-height:150px;border: 5px solid #fff;}
+
+*[draggable=true] {float:left;height:220px;width:300px;border:2px solid white;margin:10px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;background-color:#fffddf;}
+.cardTitle {background-color: #fffddf;border:2px solid white;}
+.cardTitle input{width:350px;display:block;background-color:#fff;border:none;}
+.cardstory textarea {height:150px;width:150px;background-color:#fff;border:none;}
+.card .body {width:80%;}
+.card .footer {clear:both;width:100%;padding-top:10px;}
+.card .left {float:left;width:47%;height:100%;padding:5px;}
+.card .right {float:right;width:44%;height:100%;padding:5px;}
+.card h2 {padding:2;margin:0;}
+.card p {padding:0;margin:0;}
+.card img {margin-left:130%;}
+.card h3 {padding:0;margin:0;font-size:.8em;}
+.grey {color:#777;font-size:1.1em !important;}
+.table {display: table;margin:0 auto;margin-left:5px;}
+.row {display: table-row;width:100%;}
+.cell {display: table-cell;}
+.hidecolumn {float:left;margin-left:5px;}
+.addcard {float:right;margin-right:5px;}
+.quickmenubar {width:30px;height:400px;text-align:center;border:1px solid #000;margin-right:3px;margin-left:0px;float:left;}
+iframe {height:600px;border:none;}
+
+
+#columnminstate {width:25px;height:300px;border:1px solid #000;}
+#tabmenu li p {margin-top:20px;white-space:nowrap;-moz-transform:rotate(-270deg);-moz-transform-origin: top middle;-webkit-transform: rotate(-270deg);-webkit-transform-origin: top middle;-o-transform: rotate(-270deg);-o-transform-origin:  top middle;filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);}
+#tabmenu {margin:0;padding:0;}
+#tabmenu li {display:block;list-style:none;background-color:#ffcc33;float:left;width:40px;height:300px;margin-right:5px;}
+#taskwalltopnav {margin-bottom:5px;}
+#infopanetest {left:850px;display:none;position:absolute;z-index:9999;width:400px;height:300px;background-color:#fff;border:2px solid black;margin:10px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;float:left;}
+#infopanecum {left:440px;display:none;position:absolute;z-index:9999;width:400px;height:300px;background-color:#fff;border:2px solid black;margin:10px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;float:left;}
+#infopaneburn {left:30px;display:none;position:absolute;z-index:9999;width:400px;height:300px;background-color:#fff;border:2px solid black;margin:10px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;float:left;}
+
+
+
+/* Accordionza jQuery Plugin Copyright 2010, Geert De Deckere <geert@idoe.be>*/
+#accordion3 {height:40px;list-style:none;margin:0;overflow:scroll;padding:0;width:780px;}
+#accordion3 li {height:40px;background:url(../images/slide.png);position:relative;}
+#accordion3 .slide2 { background-position:0 -40px; }
+#accordion3 .slide3 { background-position:0 -80px; }
+#accordion3 .slide4 { background-position:0 -120px; }
+#accordion3 .slide_handle {color:#fff;cursor:default;font-size:14px;height:32px;left:0;padding:8px 0 0;position:absolute;text-align:center;text-shadow:0 1px 0 rgba(0,0,0,0.5);top:0;width:80px;}
+#accordion3 .slide_content {color:#666;left:100px;padding:10px 0 0;position:absolute;top:0;}
+#accordion3 p { margin:0; }
+#accordion3 a {background:#2bacbc;color:#fff;padding:0 2px;text-decoration:none;text-shadow:none;}
+#accordion3 a:hover { opacity:0.8; }
+#accordion3 .slide2 a { background:#7bbc2b; }
+#accordion3 .slide3 a { background:#cec319; }
+#accordion3 .slide4 a { background:#bc3b2b; }
+
+
+
+/*
+ * SimpleModal Basic Modal Dialog
+ * http://www.ericmmartin.com/projects/simplemodal/
+ * http://code.google.com/p/simplemodal/
+ * Copyright (c) 2010 Eric Martin - http://ericmmartin.com
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ * Revision: $Id: basic.css 257 2010-07-27 23:06:56Z emartin24 $
+ */
+
+#osx-modal-content, #osx-modal-data {display:none;}
+/* Overlay */
+#osx-overlay {background-color:#000; cursor:wait;}
+/* Container */
+#osx-container {background-color:#eee; color:#000; font: 16px/24px "Lucida Grande",Arial,sans-serif; padding-bottom:4px; width:600px; -moz-border-radius-bottomleft:6px; -webkit-border-bottom-left-radius:6px; -moz-border-radius-bottomright:6px; -webkit-border-bottom-right-radius:6px; border-radius:0 0 6px 6px; -moz-box-shadow:0 0 64px #000; -webkit-box-shadow:0 0 64px #000; box-shadow:0 0 64px #000;}
+#osx-container a {color:#ddd;}
+#osx-container #osx-modal-title {color:#000; background-color:#ddd; border-bottom:1px solid #ccc; font-weight:bold; padding:6px 8px; text-shadow:0 1px 0 #f4f4f4;}
+#osx-container .close {display:none; position:absolute; right:0; top:0;}
+#osx-container .close a {display:block; color:#777; font-weight:bold; padding:6px 12px 0; text-decoration:none; text-shadow:0 1px 0 #f4f4f4;}
+#osx-container .close a:hover {color:#000;}
+#osx-container #osx-modal-data {font-size:12px; padding:6px 12px;}
+#osx-container h2 {margin:10px 0 6px;}
+#osx-container p {margin-bottom:10px;}
+#osx-container span {color:#777;}
+
+/*
+#basic-modal-content {display:none;}
+/* Overlay */
+#simplemodal-overlay {background-color:#000; cursor:wait;}
+/* Container */
+#simplemodal-container {height:360px; width:600px; color:#bbb; background-color:#333; border:4px solid #444; padding:12px;}
+#simplemodal-container .simplemodal-data {padding:8px;}
+#simplemodal-container code {background:#141414; border-left:3px solid #65B43D; color:#bbb; display:block; font-size:12px; margin-bottom:12px; padding:4px 6px 6px;}
+#simplemodal-container a {color:#ddd;}
+#simplemodal-container a.modalCloseImg {background:url(../img/basic/x.png) no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}
+#simplemodal-container h3 {color:#84b8d9;} */
