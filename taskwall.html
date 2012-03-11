@@ -22,7 +22,7 @@
 			</div>
 			Add new column <span id="addnewcolumn" class="tiptopmenu" title="This adds a new swim lane column to the task wall, use a unique name per column."><img id="addcolicon" src="images/addicon.png"/></span>
 			<div id="addnewcolsec" style="display:none;">
-				<input id="coltitle" type="textbox" value="New column name"></input>
+				<input id="coltitle" type="textbox" value="New column name" class="valcol"></input>
 				<span id="addnewcol"><img src="images/tickicon.png" /></span>
 			</div>	
 		</div>
@@ -46,11 +46,11 @@
 		</div>
 	<!-- CARDS -->
 		<div id="item0" class="card" draggable="true" style="display:none;">
-    		<div class="cardtitle">{Title}</div>
+    		<div class="cardtitle" style="width:200px;">Title</div>
 				<div class="body">
 					<div class="left">
 						<h3>Remaining<h3>
-						<h2><span class="hrsremaining"></span>hrs</h2>
+						<h2><span class="hrsremaining">0</span>hrs</h2>
 						<h3>Owner<h3>
 						<h3 class="grey owner"></h3>
 						<h3>Priority</h3>
@@ -95,12 +95,22 @@
 		</div>
 
 	<!-- JAVASCRIPT -->
-		<script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
+		<script src="js/jquery.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/jquery.inlineedit.js"></script>
 		<script src="js/jquery-ui.min.js" type="text/javascript"></script>
 		<script src="js/jquery.tipsy.js" type="text/javascript"></script>
 		<script src="js/site.js" type="text/javascript"></script>
 		<script src='js/jquery.simplemodal.js' type='text/javascript'></script>
 		<script src='js/taskwall.js' type='text/javascript'></script>
 		<script src='js/osx.js' type='text/javascript'></script>
+		<script type="text/javascript">
+			$(function(){
+    		 	$('.coltitle').inlineEdit();
+    		 	$('.colwip').inlineEdit();
+    		 	$('.cardtitle').inlineEdit();
+    		 	$('.hrsremaining').inlineEdit();
+    		 	//$('.cardstory').inlineEdit();
+    		});
+		</script>
 	</body>
 </html>

@@ -9,9 +9,9 @@ h2 {padding:0px;margin-top:4px;}
 .col {background-color:#ddd;/*position:absolute;*/float:left;width: 650px;min-height:150px;border: 5px solid #fff;}
 
 *[draggable=true] {float:left;height:220px;width:300px;border:2px solid white;margin:10px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;background-color:#fffddf;}
-.cardTitle {background-color: #fffddf;border:2px solid white;}
-.cardTitle input{width:350px;display:block;background-color:#fff;border:none;}
-.cardstory textarea {height:150px;width:150px;background-color:#fff;border:none;}
+.cardtitle {background-color:#fffddf;;font-size:20px;}
+.cardtitle input{width:300px;display:block;background-color:#fff;border:none;}
+.cardstory {height:130px;width:150px;border:none;}
 .card .body {width:80%;}
 .card .footer {clear:both;width:100%;padding-top:10px;}
 .card .left {float:left;width:47%;height:100%;padding:5px;}

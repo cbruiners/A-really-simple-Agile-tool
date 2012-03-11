@@ -1,4 +1,4 @@
-$(document).ready(function() {
+//$(document).ready(function() {
 
 	// SEARCH BOX GOT FOCUS
 	$("#searchmaster").click(function() {
@@ -28,4 +28,21 @@ $(document).ready(function() {
 	$(function() {
 	    $('.tiptopmenu').tipsy({gravity: 'w'});
 	  });
-});
+
+	// VALIDATES LENGTH OF TEXTBOX. 
+    $(".valcol").blur(function()
+    {
+        var txtlength;
+        txtlength = $(".valcol").val().length;
+        $(".valcol").empty();
+        if (txtlength < 1)
+        	alert('You cannot create an unnamed column.');
+    });
+
+
+    $("div[class^='cardtitle']").focusout(function(){
+    	coltitle.html().substr(0,10);
+    });
+    
+    
+//});
