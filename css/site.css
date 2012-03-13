@@ -41,6 +41,18 @@ iframe {height:600px;border:none;}
 
 
 
+/* Grid - Backlog */
+#gridheader {height:40px;background-color:#fffddf;}
+
+#backlog_length {float:left;width:577px;padding-bottom:5px;}
+#backlog_length select {background-color:#FF9900;}
+#backlog_filter {float:left;width:300px;padding-bottom:5px;}
+#backlog {clear:both;}
+#backlog_previous {background-color:#ff0000;font-weight:bold;color:#fff;padding:2px;margin-left:682px;}
+#backlog_next {background-color:#66ff66;font-weight:bold;color:#fff;margin-left:5px;padding:2px;}
+
+
+
 /* Accordionza jQuery Plugin Copyright 2010, Geert De Deckere <geert@idoe.be>*/
 #accordion3 {height:40px;list-style:none;margin:0;overflow:scroll;padding:0;width:780px;}
 #accordion3 li {height:40px;background:url(../images/slide.png);position:relative;}
@@ -55,6 +67,10 @@ iframe {height:600px;border:none;}
 #accordion3 .slide2 a { background:#7bbc2b; }
 #accordion3 .slide3 a { background:#cec319; }
 #accordion3 .slide4 a { background:#bc3b2b; }
+
+
+
+
 
 
 
