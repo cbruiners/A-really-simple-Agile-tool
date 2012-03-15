@@ -39,7 +39,14 @@ iframe {height:600px;border:none;}
 #infopanecum {left:440px;display:none;position:absolute;z-index:9999;width:400px;height:300px;background-color:#fff;border:2px solid black;margin:10px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;float:left;}
 #infopaneburn {left:30px;display:none;position:absolute;z-index:9999;width:400px;height:300px;background-color:#fff;border:2px solid black;margin:10px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;float:left;}
 
+#plansprint ul {list-style-type:none;padding:0;margin-left:25px;}
+#plansprint ul li {display:block;margin:5px;padding:20px;}
+#releaseplanview {float:left;width:390px;}
+#releaseplanview ul {margin-left:0px;}
+#sprintplanview {float:left;width:390px;}
 
+
+#backlogplanview {float:left;width:390px;}
 
 /* Grid - Backlog */
 #gridheader {height:40px;background-color:#fffddf;}
@@ -51,7 +58,25 @@ iframe {height:600px;border:none;}
 #backlog_previous {background-color:#ff0000;font-weight:bold;color:#fff;padding:2px;margin-left:682px;}
 #backlog_next {background-color:#66ff66;font-weight:bold;color:#fff;margin-left:5px;padding:2px;}
 
+.innerDetails {background-color:#ccccff;}
 
+
+#storytasks {background-color:#99ff99;padding:0px 5px 5px 5px;margin:5px 10px 0px 5px;width:760px;}
+
+.backlogsize {text-align:center;}
+.backlogmmfs {text-align:center;}
+.backlogiteration {text-align:center;}
+.backlogownedby {text-align:center;}
+.backloguserstory {text-align:left;}
+.backlogtitle {text-align:left;}
+
+/*TASK GRID*/
+.taskgridtaskid {text-align:left;}
+.taskgriddescription {text-align:left;}
+.taskgridsize {text-align:center;}
+.taskgridstatus {text-align:center;}
+.taskgridownedby {text-align:center;}
+.bintask {text-align:center;}
 
 /* Accordionza jQuery Plugin Copyright 2010, Geert De Deckere <geert@idoe.be>*/
 #accordion3 {height:40px;list-style:none;margin:0;overflow:scroll;padding:0;width:780px;}

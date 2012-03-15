@@ -28,7 +28,7 @@
 		</div>
     	<div id="board">
 			<div id="infopanecum" class="infopane">
-				{Cumulative flow}
+				<div id="results"></div>
 			</div>
 			<div id="infopaneburn" class="infopane">
 				{Burndown}
@@ -111,6 +111,20 @@
     		 	$('.hrsremaining').inlineEdit();
     		 	//$('.cardstory').inlineEdit();
     		});
+		</script>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var url='js/jsonsource.json';
+				
+				$.getJSON(url,function(json){
+						$.each(json.results,function(index, itemData){
+						alert('Got here');
+			   				$("#results").append('<p>'+itemData.userstory+'</p>');
+						});
+					});
+				
+			});
 		</script>
 	</body>
 </html>
