@@ -39,23 +39,32 @@ iframe {height:600px;border:none;}
 #infopanecum {left:440px;display:none;position:absolute;z-index:9999;width:400px;height:300px;background-color:#fff;border:2px solid black;margin:10px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;float:left;}
 #infopaneburn {left:30px;display:none;position:absolute;z-index:9999;width:400px;height:300px;background-color:#fff;border:2px solid black;margin:10px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;float:left;}
 
+
 #plansprint ul {list-style-type:none;padding:0;margin-left:25px;}
 #plansprint ul li {display:block;margin:5px;padding:20px;}
-#releaseplanview {float:left;width:390px;}
+#releaseplanview {float:left;width:480px;}
 #releaseplanview ul {margin-left:0px;}
-#sprintplanview {float:left;width:390px;}
+#sprintplanview {float:left;width:470px;}
+
+#releases {margin-top:12px;}
+.releasetitle {border:solid 1px #666;background-color:#ffcc33;padding:10px;width:470px;margin-left:5px;}
 
 
-#backlogplanview {float:left;width:390px;}
+
+.releasetitle h3 {padding:0;margin:0;}
+#backlogplanview h3 {margin:0;padding:0;}
+#releaseplanview h3 {margin:0;padding:0;}
+
+#backlogplanview {float:left;width:435px;}
 
 /* Grid - Backlog */
 #gridheader {height:40px;background-color:#fffddf;}
 
-#backlog_length {float:left;width:577px;padding-bottom:5px;}
+#backlog_length {float:left;width:725px;padding-bottom:5px;}
 #backlog_length select {background-color:#FF9900;}
 #backlog_filter {float:left;width:300px;padding-bottom:5px;}
 #backlog {clear:both;}
-#backlog_previous {background-color:#ff0000;font-weight:bold;color:#fff;padding:2px;margin-left:682px;}
+#backlog_previous {background-color:#ff0000;font-weight:bold;color:#fff;padding:2px;margin-left:832px;}
 #backlog_next {background-color:#66ff66;font-weight:bold;color:#fff;margin-left:5px;padding:2px;}
 
 .innerDetails {background-color:#ccccff;}
@@ -78,8 +87,14 @@ iframe {height:600px;border:none;}
 .taskgridownedby {text-align:center;}
 .bintask {text-align:center;}
 
+#plandatefrom {position:absolute;z-index:9999;}
+#plandateto {position:absolute;z-index:9999;}
+
+#txtfromdate {width:75px;}
+#txttodate {width:75px;}
+
 /* Accordionza jQuery Plugin Copyright 2010, Geert De Deckere <geert@idoe.be>*/
-#accordion3 {height:40px;list-style:none;margin:0;overflow:scroll;padding:0;width:780px;}
+#accordion3 {height:40px;list-style:none;margin:0;overflow:scroll;padding:0;width:930px;}
 #accordion3 li {height:40px;background:url(../images/slide.png);position:relative;}
 #accordion3 .slide2 { background-position:0 -40px; }
 #accordion3 .slide3 { background-position:0 -80px; }
